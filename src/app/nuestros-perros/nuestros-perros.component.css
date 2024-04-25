@@ -1,0 +1,31 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.animales{
+    columns: 5 200px;
+    column-gap: 16px;
+    margin: 16px;
+}
+
+.tarjeta{
+    break-inside: avoid;
+    margin-bottom: 16px;
+}
+
+.caja{
+    background-color: #c09d8956;
+}
+
+.caja h5{
+    text-align: center;
+}
+
+.caja p{
+    margin-bottom: 5px;
+}
+
+footer{
+    padding: 26px;
+    background-color: #F2BC8E;
+}
