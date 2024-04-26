@@ -1,103 +1,45 @@
-<nav class="navbar navbar-expand-lg" style="background-color: #f2bc8e">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
+<div class="arriba">
+  <div class="texto">
+    <h1>Nuestros perros y gatos</h1>
+    <p>¡Conoce a los animales de amor incondicional!</p>
   </div>
-</nav>
+</div>
+
+<hr>
 
 <div class="animales">
   @for (item of array; track item) {
   <div class="tarjeta">
-    <div class="card caja">
-      <img [src]="item.imagen" class="card-img-top" [alt]="item.nombre" />
-      <div class="card-body">
-        <h5 class="card-title">{{ item.nombre }}</h5>
-        <p class="card-text">Edad: {{ item.edad }}</p>
-        <p class="card-text">Color: {{ item.color }}</p>
-        <p class="card-text">Raza: {{ item.raza }}</p>
-        <p class="card-text">Tiempo con nosotros: {{ item.tiempoEnRefugio }}</p>
-        <p class="card-text">
-          Comportamiento: {{ item.resumenComportamiento }}
-        </p>
+    <a href="#">
+      <div class="card caja">
+        <img [src]="item.imagen" class="card-img-top" [alt]="item.nombre" />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.nombre }}</h5>
+          <div class="dato">
+            <i class="pi pi-calendar" style="color: #58433E"></i>
+            <p class="card-text">&nbsp; {{ item.edad }}</p>
+          </div>
+          <div class="dato">
+            <i class="pi pi-palette" style="color: #58433E"></i>
+            <p class="card-text">&nbsp; {{ item.color }}</p>
+          </div>
+          <div class="dato">
+            <i class="pi pi-tag" style="color: #58433E"></i>
+            <p class="card-text">&nbsp; {{ item.raza }}</p>
+          </div>
+          <div class="dato">
+            <i class="pi pi-clock" style="color: #58433E"></i>
+            <p class="card-text">&nbsp; {{ item.tiempoEnRefugio }} &nbsp;con nosotros</p>
+          </div>
+          <div class="dato">
+            <i class="pi pi-info-circle" style="color: #58433E"></i>
+            <p class="card-text">
+              &nbsp; {{ item.resumenComportamiento }}
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
   }
 </div>
-
-<footer>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-    distinctio corporis laboriosam odit recusandae voluptas ducimus enim minima
-    vitae tenetur officia, maiores voluptate inventore optio cumque culpa
-    debitis, repellendus tempora! Nobis sed iste aspernatur ratione aut rerum
-    hic repudiandae suscipit inventore ut. Quidem molestiae, fugit eaque unde
-    nobis, dolores odio maiores quod deleniti doloribus quae, possimus
-    blanditiis ab architecto consectetur. Magnam distinctio corrupti inventore
-    ratione perspiciatis doloribus, quibusdam voluptate explicabo molestiae.
-    Culpa beatae ex sunt, laudantium laboriosam fuga minima perspiciatis ut
-    iusto nulla debitis nesciunt ratione iste aliquam veritatis obcaecati!
-    Delectus iste cumque facilis iusto maiores nesciunt, maxime, accusamus at
-    consectetur fugit sunt voluptate nobis. Alias consectetur debitis aspernatur
-    assumenda nam cupiditate laboriosam earum. Architecto iste aliquid suscipit
-    et voluptatibus. Accusamus maiores ducimus, dignissimos qui sapiente
-    excepturi similique aspernatur? Similique, suscipit quos repellendus
-    explicabo totam, qui in deleniti ducimus laudantium veniam odio unde et
-    doloremque quas vero dicta maxime ratione? Architecto saepe numquam debitis,
-    voluptatum repudiandae minima accusamus, expedita magni quidem in earum quo
-    aliquam sunt dolorem veniam hic harum quam assumenda ex fuga? Omnis,
-    voluptas. Excepturi dolor ducimus vel! Iure, consequatur voluptatibus sequi
-    commodi voluptatum perferendis iusto sed aliquid aut minus eum? Numquam,
-    quas libero eveniet soluta ullam quisquam facilis illum cumque sint,
-    adipisci ut. Voluptatem rem magni officia
-  </p>
-</footer>
