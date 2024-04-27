@@ -1,0 +1,181 @@
+* {font-family: "Roboto Flex", sans-serif;}
+/* Primera seccion */
+div.contenedor {
+    min-height: 550px;
+    max-height: 550px;
+    background-image: url(../../../assets/media/fondo-1.jpeg);
+    background-size: cover;
+    overflow: hidden;
+    min-width: 100%;
+}
+div.leyenda {
+    align-items: center;
+    max-width: 500px;
+    min-height: 220px;
+    max-height: 220px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 2rem;
+    padding: 30px;
+    text-align: center;
+    margin: 50px 50px;
+    color: white;
+}
+h3 {
+    font-weight: 800;
+    font-size: 25px;
+    margin: 0 0 10px 0;
+}
+p.all-p {
+    font-weight: 500;
+    margin: 0;
+}
+a:hover {
+    box-shadow: 0 3px 10px #d2b48c;
+    transform: scale(1.01);
+}
+a {
+    transition: transform 0.2s ease-in;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 0 0 0;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 5px 25px;
+    border: none;
+    border-left: 3px solid #D2B48C;
+    border-right: 3px solid #D2B48C;
+    font-weight: 600;
+    color: black;
+}
+/* Segunda seccion */
+div.sucursales {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+div.mapa {
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+}
+div.img-mapa {
+    height: 606px;
+    width: 606px;
+    border: 3px solid #D2B48C;
+}
+.map-map {width: 600px;height: 600px;}
+div.extra-1 {
+    background-color: white;
+    width: 40%;
+    padding: 30px;
+    text-align: center;
+}
+div.extra-1  > h3 {
+    font-weight: 600;
+    margin: 0;
+    font-size: 28px;
+    padding: 5px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+div.extra-1 > h5 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    padding: 2px 15px;
+}
+div.extra-1 > h5.last-h5 {margin-bottom: 60px;}
+div.extra-1 > h5.first-h5 {margin-top: 20px;}
+ul {
+    font-size: 16px;
+    text-align: left;
+    margin: auto;
+    list-style-type: none;
+}
+li {list-style: inside none;}
+li.horarios {list-style: inside disc;}
+div.divisor {
+    min-height: 7px;
+    border-bottom: 3px solid #D2B48C;
+    border-top: 2px solid #b59f82;
+    margin: 15px 0 20px 0;
+}
+
+/* Tercera seccion */
+div.out{font-family: Georgia, 'Times New Roman', Times, serif;color: rgb(95, 94, 94);margin-top: 15px;}
+.tit{font-weight: bolder;margin: 10px 0 15px 0;}
+.right{text-align: left;padding-left: 25px;min-height: 100%;}
+table{width: 100%;border-collapse: collapse;height: 100%;}
+img.formulario{width: 540px;height: auto;}
+.cont-bot{text-align: left;margin-top: 50px;}
+td.td-img {text-align: right;}
+.holder{
+    width: 260px;
+    height: 35px;
+    padding-left: 20px;
+    color: #333;   
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.holdermail{
+    width: 540px;
+    height: 35px;
+    padding-left: 20px;
+    color: #333;  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.holdertext{
+    width: 540px;
+    padding-left: 20px;
+    padding-top: 12px;
+    color: #333;  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.spacer {margin-right: 20px;}
+.space {display: block; height: 20px;}
+.spacedown{display: block; height: 70px; }
+.p-button-custom {
+    display: inline-block;
+    padding: 7px 22px;
+    background-color: rgb(191, 157, 136);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.10s ease;
+    text-decoration: none; 
+    margin: 0;
+}
+.p-button-custom .p-button-label {color: #ffffff;}
+.p-button-custom:hover {background-color:rgb(141, 114, 102);letter-spacing: 2px;}
+
+/* Responsive */
+@media screen and (max-width: 1500px) {
+    /* Primera seccion */
+    div.contenedor {min-height: 450px;}
+    div.leyenda {max-width: 365px;max-height: 350px;margin: 30px 30px;}
+    h3 {font-weight: 700;font-size: 20px;}
+    p.all-p {font-weight: 400;margin: 0;}
+
+    /* Segunda seccion */
+    .map-map {width: 470px;height: 470px;}
+    div.extra-1 { width: 50%;}
+    div.img-mapa {height: 476px;width: 476px;}
+    div.extra-1  > h3 {font-size: 20px;}
+    div.extra-1 > h5 {font-size: 15px;}
+    div.extra-1 > h5.last-h5 {margin-bottom: 15px;}
+    div.extra-1 > h5.first-h5 {margin-top: 10px;}
+    div.divisor {
+        min-height: 4px;
+        border-bottom: 2px solid #D2B48C;
+        border-top: 1px solid #b59f82;
+        margin: 5px 0 15px 0;
+    }
+    ul {font-size: 15px;}
+}
