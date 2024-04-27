@@ -3,9 +3,19 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "amorincondicional": {
+    "Amor_Incondicional": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/amorincondicional",
+            "outputPath": "dist/amor-incondicional",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -25,16 +35,21 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles.scss","src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
               "node_modules/primeng/resources/primeng.min.css"
+              
             ],
             "scripts": [
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/masonry-layout/dist/masonry.pkgd.min.js"
-            ]
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "server.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -64,10 +79,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "amorincondicional:build:production"
+              "buildTarget": "Amor_Incondicional:build:production"
             },
             "development": {
-              "buildTarget": "amorincondicional:build:development"
+              "buildTarget": "Amor_Incondicional:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +90,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "amorincondicional:build"
+            "buildTarget": "Amor_Incondicional:build"
           }
         },
         "test": {
@@ -98,8 +113,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }
