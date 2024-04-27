@@ -1,0 +1,46 @@
+<div class="arriba">
+    <div class="texto">
+      <h1>Nuestros perros y gatos</h1>
+      <p>¡Conoce a los animales de amor incondicional!</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class="animales">
+    @for (item of array; track item) {
+    <div class="tarjeta">
+      <a href="#">
+        <div class="card caja">
+          <img [src]="item.imagen" class="card-img-top" [alt]="item.nombre" />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.nombre }}</h5>
+            <div class="dato">
+              <i class="pi pi-calendar" style="color: #58433E"></i>
+              <p class="card-text">&nbsp; {{ item.edad }}</p>
+            </div>
+            <div class="dato">
+              <i class="pi pi-palette" style="color: #58433E"></i>
+              <p class="card-text">&nbsp; {{ item.color }}</p>
+            </div>
+            <div class="dato">
+              <i class="pi pi-tag" style="color: #58433E"></i>
+              <p class="card-text">&nbsp; {{ item.raza }}</p>
+            </div>
+            <div class="dato">
+              <i class="pi pi-clock" style="color: #58433E"></i>
+              <p class="card-text">&nbsp; {{ item.tiempoEnRefugio }} &nbsp;con nosotros</p>
+            </div>
+            <div class="dato">
+              <i class="pi pi-info-circle" style="color: #58433E"></i>
+              <p class="card-text">
+                &nbsp; {{ item.resumenComportamiento }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    }
+  </div>
+  
