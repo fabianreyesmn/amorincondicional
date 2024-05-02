@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderComponent } from './header.component';
+import { ColorcitoComponent } from './colorcito.component';
 
-describe('HeaderComponent', () => {
-  let component: HeaderComponent;
-  let fixture: ComponentFixture<HeaderComponent>;
+describe('ColorcitoComponent', () => {
+  let component: ColorcitoComponent;
+  let fixture: ComponentFixture<ColorcitoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeaderComponent]
+      imports: [ColorcitoComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(HeaderComponent);
+    fixture = TestBed.createComponent(ColorcitoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
