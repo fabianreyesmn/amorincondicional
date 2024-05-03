@@ -10,10 +10,12 @@ import { ToastModule } from 'primeng/toast';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 import { MessagesModule } from 'primeng/messages';
+import { RecursosEducativosComponent } from './Components/recursos-educativos/recursos-educativos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RecursosEducativosComponent
   ],
   imports: [
     BrowserModule,
