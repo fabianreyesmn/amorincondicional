@@ -1,0 +1,55 @@
+<div [ngClass]="{'cita': seleccion, 'no-sel': !seleccion}">
+  @for (item of array; track item) { @if (item.nombre === seleccion) {
+  <div class="tarjeta">
+    <div class="caja">
+      <img [src]="item.imagen" class="imagen-animal" [alt]="item.nombre" />
+      <div class="">
+        <h3 class="nombre-animal">{{ item.nombre }}</h3>
+        <br>
+        <div class="carac">
+          <div class="dato">
+            <i class="pi pi-calendar" style="color: #58433e"></i>
+            <p class="texto-animal">&nbsp; {{ item.edad }}</p>
+          </div>
+          <div class="dato">
+            <i class="pi pi-palette" style="color: #58433e"></i>
+            <p class="texto-animal">&nbsp; {{ item.color }}</p>
+          </div>
+          <div class="dato">
+            <i class="pi pi-tag" style="color: #58433e"></i>
+            <p class="texto-animal">&nbsp; {{ item.raza }}</p>
+          </div>
+          <div class="dato">
+            <i class="pi pi-clock" style="color: #58433e"></i>
+            <p class="texto-animal">
+              &nbsp; {{ item.tiempoEnRefugio }} &nbsp;con nosotros
+            </p>
+          </div>
+          <div class="dato">
+            <i class="pi pi-info-circle" style="color: #58433e"></i>
+            <p class="texto-animal">&nbsp; {{ item.resumenComportamiento }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <p-calendar class="max-w-full" [inline]="true" [(ngModel)]="date" [showTime]="true" [showSeconds]="false"></p-calendar>
+    </div>
+    <div class="formulaio">
+      <div class="interesado">
+        <label for="interesado">Nombre del interesado</label>
+        <input pInputText id="interesado" placeholder="Juan Pérez" [(ngModel)]="value" />
+        <small id="interesado-small">Escribe tu nombre para hacer la cita.</small>
+      </div>
+      <div class="interesado">
+        <label for="telefono">Teléfono del interesado</label>
+        <input pInputText id="telefono" pKeyFilter="int" placeholder="4491234567" [(ngModel)]="value" />
+        <small id="telefono-small">Escribe tu teléfono para hacer la cita.</small>
+      </div>
+      <div class="btn-registrar">
+        <p-button label="Submit" [raised]="true" severity="secondary"></p-button>
+      </div>
+    </div>
+  </div>
+  } }
+</div>

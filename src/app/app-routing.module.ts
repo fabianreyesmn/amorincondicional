@@ -11,8 +11,9 @@ const routes: Routes = [
   // { path: 'home', component:  InicioComponent}, 
   // { path: 'about', component: AboutUsComponent},
   // { path: 'ayuda', component:  AyudaComponent}, 
-  { path: 'mascotas', component: NuestrosPerrosComponent}, 
+  { path: 'mascotas', component: NuestrosPerrosComponent},
   { path: 'contacto', component: ContactoComponent },
+  { path: '**', redirectTo: '/contacto' },
 ];
 
 @NgModule({

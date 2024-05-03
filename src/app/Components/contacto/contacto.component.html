@@ -45,25 +45,27 @@
 
 <div class="out">
     <table>
-        <tr>
-            <td class="td-img"><img class="formulario" src="../../../assets/media/form-1.jpg" alt=""></td>
-            <td>
-                <div class="right">
-                    <h2 class="tit">Escríbenos</h2>
-                    <form >
-                        <input class="holder" type="text" name="nombre" placeholder="Nombre" [(ngModel)]="nombreForm" required>
-                        <span class="spacer"></span> 
-                        <input class="holder" type="text" name="apellido" placeholder="Apellido" [(ngModel)]="apellidoForm" required>
-                        <span class="space"></span>
-                        <input class="holdermail" type="email" id="email" name="email" placeholder="Correo" [(ngModel)]="correoForm" required>
-                        <span class="space"></span>
-                        <textarea  class="holdertext" rows="4" cols="50" name="mensajeFormulario" placeholder="Tu mensaje" [(ngModel)]="msgForm" required></textarea>
-                        <span class="space"></span>
-                        <button pButton type="button" label="ENVIAR" class="p-button-custom" (click)="confirm()"></button>
-                    </form>
-                </div>
-            </td>
-        </tr>
+        <tbody>
+            <tr>
+                <td class="td-img"><img class="formulario" src="../../../assets/media/form-1.jpg" alt=""></td>
+                <td>
+                    <div class="right">
+                        <h2 class="tit">Escríbenos</h2>
+                        <form >
+                            <input class="holder" type="text" name="nombre" placeholder="Nombre" [(ngModel)]="nombreForm" required>
+                            <span class="spacer"></span> 
+                            <input class="holder" type="text" name="apellido" placeholder="Apellido" [(ngModel)]="apellidoForm" required>
+                            <span class="space"></span>
+                            <input class="holdermail" type="email" id="email" name="email" placeholder="Correo" [(ngModel)]="correoForm" required>
+                            <span class="space"></span>
+                            <textarea  class="holdertext" rows="4" cols="50" name="mensajeFormulario" placeholder="Tu mensaje" [(ngModel)]="msgForm" required></textarea>
+                            <span class="space"></span>
+                            <button pButton type="button" label="ENVIAR" class="p-button-custom" (click)="confirm()"></button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
     </table>
 </div>
 
