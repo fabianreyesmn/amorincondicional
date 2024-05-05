@@ -42,5 +42,7 @@
     }
   </div>
 
-  <app-registro [array]="array" [seleccion]="seleccion"></app-registro>
+  <app-citas [actualizar]="actualizar"></app-citas>
+
+  <app-registro id="seccion-cita" [array]="array" [seleccion]="seleccion" (actualizacion)="recibirActu($event)"></app-registro>
   

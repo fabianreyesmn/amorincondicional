@@ -2,20 +2,22 @@ import { Component } from '@angular/core';
 import { Animales } from '../../interfaces/animales';
 import { AnimalesService } from '../../services/animales.service';
 import { RegistroComponent } from '../registro/registro.component';
+import { CitasComponent } from '../../citas/citas.component';
 
 @Component({
   selector: 'app-nuestros-perros',
   standalone: true,
-  imports: [RegistroComponent],
+  imports: [RegistroComponent, CitasComponent],
   templateUrl: './nuestros-perros.component.html',
   styleUrl: './nuestros-perros.component.css'
 })
 export class NuestrosPerrosComponent {
   array: Animales [] = [];
   seleccion: string = "";
+  actualizar: boolean;
 
   constructor(public animalesService: AnimalesService){
-
+    this.actualizar = false;
   }
 
   ngOnInit(){
@@ -40,5 +42,9 @@ export class NuestrosPerrosComponent {
 
   hacerCita(sel:string){
     this.seleccion = sel;
+  }
+
+  recibirActu(actu: boolean){
+    this.actualizar = actu;
   }
 }

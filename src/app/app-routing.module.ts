@@ -5,15 +5,17 @@ import { RouterModule, Routes } from '@angular/router';
 // import { AyudaComponent } from './Components/ayuda/ayuda.component';
 import { ContactoComponent } from './Components/contacto/contacto.component';
 import { NuestrosPerrosComponent } from './Components/nuestros-perros/nuestros-perros.component';
+import { BusquedaComponent } from './Components/busqueda/busqueda.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/contacto', pathMatch: 'full' },
+  { path: '', redirectTo: '/mascotas', pathMatch: 'full' },
   // { path: 'home', component:  InicioComponent}, 
   // { path: 'about', component: AboutUsComponent},
   // { path: 'ayuda', component:  AyudaComponent}, 
   { path: 'mascotas', component: NuestrosPerrosComponent},
   { path: 'contacto', component: ContactoComponent },
-  { path: '**', redirectTo: '/contacto' },
+  { path: 'busqueda', component: BusquedaComponent },
+  { path: '**', redirectTo: '/mascotas' },
 ];
 
 @NgModule({
